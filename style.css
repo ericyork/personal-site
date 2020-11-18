@@ -1,0 +1,118 @@
+:root {font-size: 22px;line-height: 1.75;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";--lt-prime: #D3BDFF;--prime: #540DE2;--white: #F4F4F4;--lt-gr: #DCE3E4;--mid-gr: #515A5D;--black: #303537;--border-radius: 6px;}
+*, *::before, *::after {box-sizing: border-box;}
+html, body, article, header, nav, main, article, aside, section, div, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, figcaption, img, footer {margin: 0; padding: 0;}
+body {
+  background-color: var(--lt-gr);
+  color: var(--black);
+}
+nav {
+  font-size: 1em;
+  color: var(--lt-gr);
+  background-color: var(--black);
+}
+.nav-container {
+  padding: 1.2em 0 1em 0;
+  max-width: 96vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.branding:link {
+  color: var(--lt-gr);
+}
+.branding span {
+  border-bottom: 1px dashed var(--lt-gr);
+}
+.nav-links {
+  width: 20vw;
+  font-size: .8em;
+  padding-top: .2em;
+  display: flex;
+  justify-content: space-between;
+}
+nav a:link {color: var(--lt-prime); text-decoration: none; transition: all .3s ease-in-out;}
+nav a:visited {color: var(--lt-prime);}
+nav a:hover {color: var(--lt-gr);}
+nav a:active{color: var(--white);}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:70vh;
+}
+.wrap {
+  width: 75%;
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+}
+@media screen and (max-width: 990px) {
+  main {height: auto;}
+  .nav-links {width: 50vw;}
+  .wrap {flex-direction: column; width: 95vw; height: 100%;}
+  .figure {flex-direction: column-reverse; padding-left: 0 !important;}
+  .social {order: -1; width: 70vw; margin: 0 auto; margin-bottom: 2em;}
+}
+.figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 2em;
+  padding-left: 4em;
+  margin-top: 2em;
+  order: 2;
+  flex-basis: 25%;
+}
+.copy {
+  flex-basis: 75%;
+}
+.copy > p {
+  margin-bottom: 1em;
+  max-width: 70ch;
+}
+.greeting {
+  font-weight: 100;
+  font-size: 2em;
+}
+header.splash {
+  padding: 4rem 0 1rem 0;
+  font-size: 125%;
+  border-bottom: 2px solid rgba(81,90,93, 0.3);
+  margin-bottom: 2rem;
+}
+.small {
+  font-size: .8em;
+  color: var(--mid-gr);
+  font-weight: 400;
+}
+.devicons {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: var(--black);
+}
+footer {
+  font-size: .8em;
+  color: var(--lt-gr);
+  background-color: var(--black);
+  position: fixed;
+  min-width: 100%;
+  bottom: 0;
+  padding: 1.4em 0 .6em 0;
+  display: flex;
+  justify-content: space-between;
+}
+.ip {
+  margin-left: 1em;
+}
+.ip span {
+  font-size: .8em;
+  text-decoration: underline;
+}
+.social a {
+  margin-right: 1em;
+  font-size: 1.3em;
+}
+footer a:link {color: var(--lt-gr); text-decoration: none; transition: all .3s ease-in-out;}
+footer a:visited {color: var(--lt-gr);}
+footer a:hover {color: var(--lt-prime);}
+footer a:active{color: var(--lt-prime);}
