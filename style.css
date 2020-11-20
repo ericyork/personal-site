@@ -50,18 +50,26 @@ main {
   main {height: auto;}
   .nav-links {width: 50vw;}
   .wrap {flex-direction: column; width: 95vw; height: 100%;}
-  .figure {flex-direction: column-reverse; padding-left: 0 !important;}
-  .social {order: -1; width: 70vw; margin: 0 auto; margin-bottom: 2em;}
+  .figure {flex-direction: column-reverse; margin-left: 0 !important;}
 }
 .figure {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 2em;
-  padding-left: 4em;
-  margin-top: 2em;
+  margin-left: 4em;
   order: 2;
-  flex-basis: 25%;
+  flex-basis: 31%;
+}
+.name {
+  text-align: center;
+}
+.name em {
+  font-size: .8em;
+}
+.sub {
+  line-height: 1.1;
+  text-align: center;
+  font-size: .8em;
 }
 .copy {
   flex-basis: 75%;
